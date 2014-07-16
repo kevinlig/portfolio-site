@@ -1,0 +1,9 @@
+{
+  "name": "kevin-portfolio",
+  "version": "3.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-react": "~0.8.2",
+    "grunt-contrib-concat": "~0.4.0"
+  }
+}

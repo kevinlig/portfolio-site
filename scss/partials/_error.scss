@@ -1,0 +1,51 @@
+.errorPage {
+	display: table;
+	height: 100%;
+	width: 100%;
+
+	.errorWrap {
+		display: table-cell;
+		vertical-align: middle;
+
+		.errorContents {
+			width: 360px;
+			height: 100px;
+			margin-left: auto;
+			margin-right: auto;
+
+			.errorLeft {
+				float:left;
+				height: 100px;
+				width: 60px;
+
+				@include at2x("../img/error","png",60px, 50px);
+				background-repeat:no-repeat;
+				background-position: center center;
+
+				margin-right: 20px;
+			}
+			.errorRight {
+				float: left;
+				width: 280px;
+				height: 100px;
+
+				margin-top: 15px;
+
+				font-family: "Lato", sans-serif;
+
+				.errorTitle {
+					font-weight: 700;
+					font-size: 20px;
+					color: #FF3A2D;
+				}
+				.errorDescription {
+					margin-top: 10px;
+					font-weight: 300;
+					font-size: 14px;
+				}
+			}
+
+
+		}
+	}
+}

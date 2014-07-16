@@ -1,0 +1,16 @@
+.footer {
+	background-color: #EBEBEB;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 10px;
+
+	padding-left: 10%;
+	padding-bottom: 10px;
+	padding-top: 20px;
+
+	@media (max-width: 720px) {
+		padding-left: 30px;
+		text-align: center;
+	}
+
+}

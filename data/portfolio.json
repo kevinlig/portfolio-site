@@ -1,0 +1,187 @@
+{
+  "header": {
+    "title": "Kevin Li",
+    "subtitle": "Portfolio",
+    "description": "I am a developer with experience building applications for web, mobile, and wearable devices.",
+    "images": [
+      "web",
+      "phone",
+      "glass"
+    ]
+  },
+  "portfolio": [
+    {
+      "title": "Polyplan",
+      "images": [
+        {
+          "src": "polyplan/polyplan1",
+          "alt": "Main screen"
+        },
+        {
+          "src": "polyplan/polyplan2",
+          "alt": "Graphing capability"
+        }
+      ],
+      "description": "<b>Polyplan</b> is a native Google Glass spreadsheet application built using the Glass Development Kit (GDK). Excel spreadsheets are loaded onto Google Glass by way of a custom-developed Excel plugin using QR codes and a Heroku-hosted server. Once data is loaded, Polyplan can generate bar and line graphs as well as perform basic functions.",
+      "techList": [
+        {
+          "icon": "glass",
+          "text": "Google Glass native glassware"
+        },
+        {
+          "icon": "cloud",
+          "text": "PHP/MySQL backend stack"
+        }
+      ],
+      "linkList": [
+        {
+          "icon": "video",
+          "title": "Video Demo",
+          "link": "https://vimeo.com/100863803"
+        }
+      ]
+    },
+    {
+      "title": "Root",
+      "images": [
+        {
+          "src": "root/root",
+          "alt": "3D map"
+        }
+      ],
+      "description": "<b>Root</b> is suite of cloud-connected tablet and wearable apps for first responders to share and view location-specific information. First responders can leave notes about particular locations (such as notes about the locations of fire hydrants or lock boxes) and view these notes on a custom 3D map. Additionally, first responders who wear a Pebble smartwatch automatically receive a summary of notes for a particular location when they arrive.<br /><br />Root was developed in 24 hours as part of the AT&T Public Safety Hackathon in Washington DC, where it won the prize for Best Emergency Preparedness App.",
+      "techList": [
+      	{
+          "icon": "unity",
+          "text": "Unity game engine"
+        },
+        {
+          "icon": "pebble",
+          "text": "Pebble smartwatch native app"
+        },
+        {
+          "icon": "ipad",
+          "text": "iOS native app"
+        }
+      ],
+      "linkList": [
+        {
+          "icon": "award",
+          "title": "AT&T Public Safety Hackathon - Best Emergency Preparedness App",
+          "link": "http://developerboards.att.lithium.com/t5/AT-T-Developer-Program-Blogs/AT-amp-T-Public-Safety-Focused-Mobile-App-Hackathon-Event-Recap/ba-p/38214"
+        },
+        {
+          "icon": "github",
+          "title": "Github Repo",
+          "link": "https://github.com/kevinlig/Root-3D"
+        }
+      ]
+    },
+    {
+      "title": "Evergreen Patient Tracking",
+      "images": [
+        {
+          "src": "evergreen/evergreen",
+          "alt": "Main tracking screen"
+        },
+        {
+          "src": "evergreen/alert",
+          "alt": "Doctor alert screen"
+        }
+      ],
+      "description": "<b>Evergreen</b> is an automated patient tracking system for surgical waiting rooms. As patients progress through the various phases of surgery, their status is automatically updated and captured through the use of iBeacons installed throughout the surgical center. These updates are automatically pushed to a tracking app available to family members in the waiting room.<br /><br />Evergreen was developed in 24 hours as part of the MedStar Institute for Innovation's 2014 HealthHack, where it won the first place prize.",
+      "techList": [
+      	{
+          "icon": "ibeacon",
+          "text": "iBeacons"
+        },
+        {
+          "icon": "ipad",
+          "text": "iOS native app"
+        },
+        {
+          "icon": "cloud",
+          "text": "PHP/MySQL backend stack"
+        }
+      ],
+      "linkList": [
+        {
+          "icon": "award",
+          "title": "MedStar Institute for Innovation HealthHack 2014 - First Place"
+        }
+      ]
+    },
+    {
+      "title": "Food Truck Forecast",
+      "images": [
+        {
+          "src": "foodtruck/foodtruck",
+          "alt": "Food truck predictions"
+        }
+      ],
+      "description": "<b>Food Truck Forecast</b> is a web application that predicts which food trucks will be present at my McLean, VA-based employer. The web application is a NodeJS app that utilizes neural networks to generate predictions and a third-party data source for training data.",
+      "techList": [
+      	{
+          "icon": "neural",
+          "text": "Neural network-based predictions"
+        },
+        {
+          "icon": "web",
+          "text": "Web app"
+        },
+        {
+          "icon": "cloud",
+          "text": "NodeJS/MongoDB backend stack"
+        }
+      ],
+      "linkList": [
+        {
+          "icon": "web",
+          "title": "Web Site",
+          "link": "https://foodtruckforecast.herokuapp.com/"
+        },
+        {
+          "icon": "github",
+          "title": "Github Repo",
+          "link": "https://github.com/kevinlig/FoodTruckForecast"
+        }
+      ]
+    },
+    {
+      "title": "BikeIt",
+      "images": [
+        {
+          "src": "bikeit/map",
+          "alt": "BikeIt map view"
+        },
+        {
+          "src": "bikeit/trend",
+          "alt": "BikeIt trend view"
+        }
+      ],
+      "description": "<b>BikeIt</b> is a native iOS app that displays availability data for Capital Bikeshare stations. Current data is displayed on a map, but the app also displays usage trends and near-term availability forecasts for each station.<br /><br />BikeIt is available on the App Store.",
+      "techList": [
+      	{
+          "icon": "iphone",
+          "text": "iOS native app"
+        },
+        {
+          "icon": "cloud",
+          "text": "Utilizes Amazon Web Services (AWS)"
+        }
+      ],
+      "linkList": [
+        {
+          "icon": "appstore",
+          "title": "App Store",
+          "link": "https://itunes.apple.com/us/app/bikeit-bikeshare-monitoring/id686850737?mt=8"
+        },
+        {
+          "icon": "github",
+          "title": "Github Repo",
+          "link": "https://github.com/kevinlig/bikeit"
+        }
+      ]
+    }
+  ]
+}
