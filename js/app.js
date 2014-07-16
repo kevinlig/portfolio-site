@@ -36,14 +36,7 @@ r.batchedUpdates(n,s)}};t.exports=i},{"./EventPluginHub":16,"./ReactUpdates":69}
 
 var HeaderDescription = React.createClass({displayName: 'HeaderDescription',
 	componentDidMount: function() {
-		window.headerLoop = setInterval(function() {
-
-		}, 1000);
-	},
-	componentWillUnmount: function() {
-		if (window.headerLoop != undefined) {
-			clearInterval(window.headerLoop);
-		}
+		
 	},
 	render: function() {
 
@@ -54,16 +47,18 @@ var HeaderDescription = React.createClass({displayName: 'HeaderDescription',
 
 		var imageList = this.props.images.map(function(item, index) {
 			return (
-				React.DOM.img( {id:"img" + index, index:index, src:"img/header/" + item + extension} )
+				React.DOM.img( {id:"img" + index, src:"img/header/" + item + extension} )
 			);
 		});
 
 		return (
 			React.DOM.div( {className:"headerDescriptionWrap"}, 
 				React.DOM.div( {className:"headerIcons"}, 
-					React.DOM.div( {className:"iconWrap"}, 
+					
+					React.DOM.div( {className:"iconWrap", ref:"slider"}, 
 						imageList
 					)
+				
 				),
 				React.DOM.div( {className:"headerContent"}, 
 					this.props.data

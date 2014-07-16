@@ -20,6 +20,10 @@
 		margin-right:auto;
 
 		padding-bottom: 10px;
+
+		@media only screen and (max-width: 600px), (orientation: portrait) {
+			font-size: 1.5em;
+		}
 	}
 
 	.headerSubtitle {
@@ -32,8 +36,12 @@
 
 		padding-bottom: 25px;
 
-		@media(max-width: 299px) {
+		@media only screen and (max-width: 299px), (orientation: portrait) {
 			padding-bottom: 20px;
+		}
+
+		@media only screen and (max-width: 600px), (orientation: portrait) {
+			font-weight: 400;
 		}
 	}
 
@@ -45,14 +53,14 @@
 
 		padding-bottom:10px;
 
-		@media(max-width: 499px) {
+		@media only screen and (max-width: 499px), (orientation: portrait) {
 			width: 300px;
 			height: 150px;
 
 			padding-bottom:0px;
 		}
 
-		@media (max-width: 299px) {
+		@media only screen and (max-width: 299px), (orientation: portrait) {
 			width: 100%;
 			height: auto;
 		}
@@ -63,8 +71,13 @@
 			width: 50%;
 			height: 80px;
 
-			@media(max-width: 299px) {
+			@media only screen and (max-width: 299px), (orientation: portrait) {
 				display: none;
+			}
+
+			.sliderWrap {
+				display: block;
+				width: 80px;
 			}
 
 			.iconWrap {
@@ -80,9 +93,14 @@
 					top:0;
 					right:20px;
 
+				
+
 					-webkit-animation-name: fade;
 				    -webkit-animation-iteration-count: infinite;
 				    -webkit-animation-duration: 9s;
+				    -moz-animation-name: fade;
+				    -moz-animation-iteration-count: infinite;
+				    -moz-animation-duration: 9s;
 				    animation-name: fade;
 				    animation-iteration-count: infinite;
 				    animation-duration: 9s;
@@ -90,11 +108,15 @@
 
 				#img1 {
 					opacity: 0;
+					-moz-opacity: 0;
 					-webkit-animation-delay: -6s;
+					-moz-animation-delay: -6s;
 				}
 				#img2 {
 					opacity: 0;
+					-moz-opacity: 0;
 					-webkit-animation-delay: -3s;
+					-moz-animation-delay: -3s;
 				}
 			}
 
@@ -105,7 +127,11 @@
 			width: 50%;
 			margin-top:10px;
 
-			@media(max-width: 299px) {
+			font-family: "Lato", sans-serif;
+			font-weight:100;
+			font-size: 16px;
+
+			@media only screen and (max-width: 299px), (orientation: portrait) {
 				float: none;
 				width: auto;
 				margin-left: 10px;
@@ -114,11 +140,14 @@
 				text-align:center;
 				height: auto;
 				padding-bottom: 30px;
+
 			}
 
-			font-family: "Lato", sans-serif;
-			font-weight:100;
-			font-size: 16px;
+			@media only screen and (max-width: 600px), (orientation: portrait) {
+				font-weight: 400;
+			}
+		
+
 		}
 	}
 }

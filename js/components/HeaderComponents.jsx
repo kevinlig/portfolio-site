@@ -4,14 +4,7 @@
 
 var HeaderDescription = React.createClass({
 	componentDidMount: function() {
-		window.headerLoop = setInterval(function() {
-
-		}, 1000);
-	},
-	componentWillUnmount: function() {
-		if (window.headerLoop != undefined) {
-			clearInterval(window.headerLoop);
-		}
+		
 	},
 	render: function() {
 
@@ -22,16 +15,18 @@ var HeaderDescription = React.createClass({
 
 		var imageList = this.props.images.map(function(item, index) {
 			return (
-				<img id={"img" + index} index={index} src={"img/header/" + item + extension} />
+				<img id={"img" + index} key={index} src={"img/header/" + item + extension} />
 			);
 		});
 
 		return (
 			<div className="headerDescriptionWrap">
 				<div className="headerIcons">
-					<div className="iconWrap">
+					
+					<div className="iconWrap" ref="slider">
 						{imageList}
 					</div>
+				
 				</div>
 				<div className="headerContent">
 					{this.props.data}
