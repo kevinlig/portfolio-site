@@ -18,7 +18,7 @@ var PortfolioImage = React.createClass({
 		}
 
 		return (
-			<img className="screenshot" src={"/img/projects/" + this.props.image.src + extension} alt={this.props.image.alt} />
+			<img className="screenshot" src={"img/projects/" + this.props.image.src + extension} alt={this.props.image.alt} />
 		);
 	}
 })
@@ -42,7 +42,7 @@ var PortfolioImageSlider = React.createClass({
 
 			return (
 				<li>
-					<img src={"/img/projects/" + imageItem.src + extension} alt={imageItem.alt} key={index} />
+					<img src={"img/projects/" + imageItem.src + extension} alt={imageItem.alt} key={index} />
 				</li>
 			);
 		});

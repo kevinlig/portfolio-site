@@ -110,7 +110,7 @@ var PortfolioImage = React.createClass({displayName: 'PortfolioImage',
 		}
 
 		return (
-			React.DOM.img( {className:"screenshot", src:"/img/projects/" + this.props.image.src + extension, alt:this.props.image.alt} )
+			React.DOM.img( {className:"screenshot", src:"img/projects/" + this.props.image.src + extension, alt:this.props.image.alt} )
 		);
 	}
 })
@@ -134,7 +134,7 @@ var PortfolioImageSlider = React.createClass({displayName: 'PortfolioImageSlider
 
 			return (
 				React.DOM.li(null, 
-					React.DOM.img( {src:"/img/projects/" + imageItem.src + extension, alt:imageItem.alt, key:index} )
+					React.DOM.img( {src:"img/projects/" + imageItem.src + extension, alt:imageItem.alt, key:index} )
 				)
 			);
 		});
